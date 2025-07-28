@@ -1,0 +1,26 @@
+
+public class TestSerialNumber {
+public static void main(String[] args) {
+	Product p1 = new Product();
+	Product p2 = new Product();
+	Product p3 = new Product();
+	Product p4 = new Product();
+	Product p5 = new Product();
+}
+}
+class Product {
+	int sn;
+	
+	public Product() {
+		// TODO Auto-generated constructor stub
+	}
+	public Product(int sn) {
+		this.sn = sn;
+	}
+	public String toString() {
+		return "[sn=" + sn + "]";
+	}
+	
+	
+	
+}

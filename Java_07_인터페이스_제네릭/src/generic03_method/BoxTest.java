@@ -1,0 +1,70 @@
+package generic03_method;
+
+//타입을 결정한 박스. 사용하려는 시점에서 결정난다!
+class Box<T> {
+	private T obj;
+	
+	public T getObj() {
+		return obj;
+	}
+	
+	public void setObj(T obj) {
+		this.obj = obj;
+	}
+}
+
+public class BoxTest {
+	public static void main(String[] args) {
+//		Box box1 = new Box(); //비권장
+//		Box<Object> box2 = new Box<Object>();
+	
+		Box<String> stringBox = new Box<>(); //생성자 쪽 꺾쇠 안은 생략 가능
+//		Box<> stringBox = new Box<String>(); //선언 쪽 꺾쇠는 생략 안됨
+		
+		stringBox.setObj("안녕하세요!");
+		stringBox.getObj();
+		
+		//////////////////////////////////
+		//정수형을 넣고 싶어! -> <> 안에 기초자료형은 넣을 수 없음. 참조자료형만 가능
+//		Box<Int> intBox = new Box<>();
+		//참조 자료형 넣기
+		Box<Integer> intBox = new Box<>();
+		
+		//기초자료형 -> 참조자료형 Wrapper 클래스
+		//int, char만 다르고 나머지는 다 앞글자만 대문자		
+//		int -> Integer
+//		char -> Character
+//		boolean -> Boolean
+//		...
+		
+		int i1 = 11; 	 //객체 x
+		Integer i2 = 11; //객체 O : AutoBoxing
+//		i2. 했을 때 integer가 가지고 있는 메소드를 전부다 쓸 수 있음.
+		
+		Integer i3 = Integer.valueOf(11); //객체O -> Boxing
+		
+		int i4 = 13; 	//객체 X : AutoUnboxing
+		int i5 = i3.intValue(); 	//객체 X : Unboxing
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+ 

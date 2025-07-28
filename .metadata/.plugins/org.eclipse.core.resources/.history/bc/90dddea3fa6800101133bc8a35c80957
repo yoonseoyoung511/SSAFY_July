@@ -1,0 +1,30 @@
+package inheritance05_final;
+
+public class Person {
+	String name;
+	int age; //private이면 상속받았다 하더라도 접근 불가
+	
+	//final 변수 : 값 고정. 반드시 초기화해야 함
+	//상수는 대문자
+	final String PNAME = "익명"; 
+	//객체 생성할 때는 무조건 생성자를 통해 만든다 -> 생성자에서 초기화해도 문제 x
+	final String PNAME2;
+	
+	public final void eat() {
+		System.out.println("음식을 냠냠 먹는다.");
+	}
+	
+	public Person() {
+//		super(); //생략되어 있음 : object. 생략해도 컴파일러가 알아서 넣음
+		PNAME2 = "익명2";
+	}
+
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+		PNAME2 = "익명2";
+	}
+	
+	
+}

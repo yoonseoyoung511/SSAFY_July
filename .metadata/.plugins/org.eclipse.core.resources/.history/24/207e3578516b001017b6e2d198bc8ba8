@@ -1,0 +1,21 @@
+package generics01_nomal_box;
+
+class Box {
+	private Object obj;
+	
+	public Object getObj() {
+		return obj;
+	}
+	
+	public void setObj(Object obj) {
+		this.obj = obj;
+	}
+}
+
+public class BoxTest {
+	public static void main(String[] args) {
+		Box box = new Box();
+		box.setObj("문자열");
+		System.out.println(box.getObj());
+	}
+}

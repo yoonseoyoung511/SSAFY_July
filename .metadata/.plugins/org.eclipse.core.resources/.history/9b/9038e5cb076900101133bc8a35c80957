@@ -1,0 +1,28 @@
+package 상속;
+
+public class TestParent {
+public static void main(String[] args) {
+	Child c = new Child();
+	c.print();
+	
+} // end of main
+}
+
+class GrandParent {
+	int c = 4000;
+}
+
+class Parent extends GrandParent {
+	int c = 300;
+}
+
+class Child extends Parent {
+	int c = 20;
+	
+	void print() {
+		int c = 1;
+		System.out.println(c);
+		int[] arr = new int[3];
+		arr[100] = 9;
+	}
+}

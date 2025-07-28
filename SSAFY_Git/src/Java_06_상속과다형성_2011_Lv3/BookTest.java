@@ -1,0 +1,18 @@
+package Java_06_상속과다형성_2011_Lv3;
+
+public class BookTest {
+public static void main(String[] args) {
+	BookManager bm = new BookManager();
+	Book b1 = new Book("1234", "홍길동전", "서민규", "SSAFY", 10000, "홍길동이 취업하는 이야기");
+    Book b2 = new Book("1235", "심청전", "서민규", "SSAFY", 20000, "심청이가 취업하는 이야기");
+	bm.add(b1);
+	bm.add(b2);
+	
+	Book[] b = bm.getList();
+
+	for(Book book : b) {
+		System.out.println(book);
+	}
+
+}
+}

@@ -1,0 +1,5 @@
+package interface02_다중;
+
+public class Eagle implements Bird {
+	
+}

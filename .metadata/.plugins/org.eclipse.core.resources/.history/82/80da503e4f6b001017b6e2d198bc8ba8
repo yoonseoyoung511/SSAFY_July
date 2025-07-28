@@ -1,0 +1,5 @@
+package interface04_다형성;
+
+public class KFoodChef implements Chef {
+
+}

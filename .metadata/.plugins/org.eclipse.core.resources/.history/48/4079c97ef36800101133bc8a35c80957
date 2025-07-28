@@ -1,0 +1,13 @@
+package inheritance02_ok;
+
+public class Test {
+public static void main(String[] args) {
+	Person p = new Person(); //가능한 이유 : 기본생성자 자동으로 생성해줌
+	Student st = new Student();
+	
+	//서로 연관 O. 
+	p.eat();
+	st.eat(); //부모에 있는 것도 같이 사용할 수 있게 됨.
+	
+}
+}

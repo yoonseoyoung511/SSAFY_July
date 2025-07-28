@@ -1,0 +1,13 @@
+package interface04_다형성;
+
+public class Test {
+public static void main(String[] args) {
+	KFoodChef k = new KFoodChef();
+	k.cook();
+	
+	//참조타입으로 Chef 사용가능 -> 다형성!
+	Chef chef = new KFoodChef();
+	chef.cook(); //동적 바인딩
+	
+	}
+}

@@ -1,0 +1,20 @@
+package abstract_class04_anonymous_class;
+
+public class Test {
+	public static void main(String[] args) {
+//	Chef들 관리하고 싶음
+		Chef[] chefs = new Chef[2];
+
+//	배열 이용해서 한식, 일식 요리사 담아둠
+		chefs[0] = new KFoodChef();
+		chefs[1] = new JFoodChef();
+
+//	요리시키기
+		for (Chef chef : chefs) {
+			chef.eat(); //일식 동적바인딩
+			chef.cook(); // 한식조리, 일식조리 -> 동적바인딩!
+//			추상클래스 사용해서 훨씬 가벼운 코드됨. 굿!
+		}
+
+	}
+}

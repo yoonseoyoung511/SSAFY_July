@@ -1,0 +1,6 @@
+package interface03_method;
+
+public interface MyInterface1 {
+	//추상 메서드
+	void method1();
+}

@@ -1,0 +1,31 @@
+package inheritance04_overriding;
+//Person 상속받기 위해 extends 키워드 사용하겠다.
+public class Student extends Person {
+
+	String major;
+	
+	public void eat() {
+		System.out.println("지식을 먹는다.");
+	}
+
+	public void study() {
+		System.out.println("공부한다.");
+	}
+	
+	public Student() {
+//		super("익명", 10); //생략되어 있음 : 부모의 기본생성자 호출
+	this("익명", 0, "자유전공");
+	//super, this는 같이 쓸 수 없음.
+	}
+	
+	public Student(String name, int age, String major) {
+		super(name, age);
+//		this.name = name;
+//		this.age = age;
+		this.major = major;
+		
+	}
+	
+	
+
+}

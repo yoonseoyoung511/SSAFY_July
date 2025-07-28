@@ -1,0 +1,11 @@
+package pkg1;
+
+import pkg1.pkg2.Pack;
+
+public class PackTest {
+public static void main(String[] args) {
+	Pack p = new Pack();
+	
+	System.out.println(p.pkg);
+}
+}

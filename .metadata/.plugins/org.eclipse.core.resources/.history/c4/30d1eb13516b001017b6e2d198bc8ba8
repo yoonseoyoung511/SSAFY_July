@@ -1,0 +1,5 @@
+package generics01_nomal_box;
+
+public class Box {
+
+}

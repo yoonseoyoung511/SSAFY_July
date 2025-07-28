@@ -1,0 +1,18 @@
+package generic02_generics_box;
+
+//타입을 결정한 박스
+class Box<T> {
+	private T obj;
+	
+	public T getObj() {
+		return obj;
+	}
+	
+	public void setObj(T obj) {
+		this.obj = obj;
+	}
+}
+
+public class BoxTest {
+
+}

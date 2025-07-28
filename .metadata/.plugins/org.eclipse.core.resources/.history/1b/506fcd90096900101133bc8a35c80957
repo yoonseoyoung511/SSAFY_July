@@ -1,0 +1,41 @@
+package 상속;
+
+public class TestParent {
+public static void main(String[] args) {
+	Child c1 = new Child();
+	Child c2 = new Child();
+	c1.print();
+	
+} // end of main
+}
+
+class GrandParent {
+	int c = 4000;
+	public GrandParent() {
+		super();
+	}
+}
+
+class Parent extends GrandParent {
+	int c = 300;
+	public Parent() {
+		super();
+	}
+}
+
+class Child extends Parent {
+	int c = 20;
+	
+	public Child() {
+		super();
+	}
+	
+	void print() {
+		int c = 1;
+		System.out.println(c);
+		System.out.println(this.c); //20 / 나 자신 주소 가리키는 참조변수. 
+		//child에 c없으면 300, parent에도 없으면 4000, 변수 아예 없으면 컴파일에러
+		System.out.println(super.c); //300 / 부모 가리키는 참조변수. 부모 없으면 더 위로 올라감.	
+		
+	}
+}

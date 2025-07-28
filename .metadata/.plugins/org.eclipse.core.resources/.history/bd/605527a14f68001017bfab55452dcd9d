@@ -1,0 +1,20 @@
+package com.ssafy.pjt; //가장 최상단에 위치해야함 (폴더 비슷한 구조)
+
+/////////////////////////////////////
+//import가 들어오는 자리 -> 여러개 올 수 있음
+// 기본으로 들어있는 패키지 : import java.lang.*;
+
+/////////////////////////////////////
+class Test1 {
+	
+}
+
+class Test2 {
+	
+}
+
+//public class는 딱 1개만 올 수 있다
+public class Person {
+	
+
+}

@@ -1,0 +1,34 @@
+package Java_06_상속과다형성_2011_Lv3;
+
+import java.util.Arrays;
+
+//도서관
+public class BookManager {
+	private final int MAX_SIZE = 100;
+	private Book[] books = new Book[MAX_SIZE];
+	private int size = 0; //실제 담긴 책 수
+	
+	public void add(Book book) {
+		if (size < MAX_SIZE) {
+			books[size++] = book;			
+		} else { //꽉찼으면
+			System.out.println("도서관 꽉찼어요. 추가 못함");
+		}
+	}
+	
+	public void remove(String isbn) {
+		
+	}
+	//존재하는 책만 배열로 리턴
+	public Book[] getList() {
+//		Book[] b = new Book[size];
+//		System.arraycopy(books, 0, b, 0, size);
+//		return b;
+		
+		return Arrays.copyOf(books, size);
+		
+//		중간부터 할 때. 범위 지정할 때 사용. 어차피 0에서 시작하면 그냥 copyOf하면 됨
+//		return Arrays.copyOfRange(books, 0, size);
+	}
+	
+}

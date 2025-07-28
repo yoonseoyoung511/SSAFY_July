@@ -1,0 +1,10 @@
+package abstract_class04_anonymous_class;
+
+//추상 메서드 없어도 추상 클래스 될 수 있음!
+public abstract class CFoodChef extends Chef {
+
+//	추상클래스 상속받는 경우, 2개 선택권 있음
+//	1. 추상메서드 구현할 것 (똑같은 메소드 override)
+//	2. 구현하기 싫으면 나도 추상클래스가 될 것
+
+}

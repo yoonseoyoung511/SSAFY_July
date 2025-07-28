@@ -1,0 +1,27 @@
+package polymorphism01;
+
+public class Test {
+public static void main(String[] args) {
+	Student st = new Student();
+	Person p = new Student();
+	Object obj = new Person();
+	
+//	부모는 자식 담을 수 있지만, 자식은 부모 담을 수 없음
+//	Student st2 = new Person();
+	
+//	묵시적 형 변환
+	p = st; //자식->부모로 캐스팅은 문제 x
+	obj = p;
+	
+//	명시적 형변환
+	Person person = new Person();
+//	Student student = person; //부모->자식으로 캐스팅할 때는 문제 발생
+	Student student = (Student)person; //명시적 형 변환 필요
+	
+	Person person2 = new Person();
+	Student student2 = (Student)person2; //부모->자식으로 캐스팅할 때는 문제 발생
+	
+	
+	
+}
+}

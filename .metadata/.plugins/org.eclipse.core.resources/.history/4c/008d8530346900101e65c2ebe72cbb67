@@ -1,0 +1,27 @@
+package Java_06_상속과다형성_2011_Lv3;
+
+//도서관
+public class BookManager {
+	private final int MAX_SIZE = 100;
+	private Book[] books = new Book[MAX_SIZE];
+	private int size = 0; //실제 담긴 책 수
+	
+	public void add(Book book) {
+		if (size < MAX_SIZE) {
+			books[size++] = book;			
+		} else { //꽉찼으면
+			System.out.println("도서관 꽉찼어요. 추가 못함");
+		}
+	}
+	
+	public void remove(String isbn) {
+		
+	}
+	//존재하는 책만 배열로 리턴
+	public Book[] getList() {
+		Book[] b = new Book[size];
+		System.arraycopy(books, 0, b, 0, size);
+		return b;
+	}
+	
+}

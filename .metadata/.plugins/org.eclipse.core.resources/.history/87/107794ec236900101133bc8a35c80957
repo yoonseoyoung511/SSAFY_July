@@ -1,0 +1,12 @@
+package abstract_class03;
+
+public class JFoodChef extends Chef {
+
+	String speciality; //내 주전공
+
+	// Chef에 cook() 있으니까 어노테이션해도 에러 안 남!
+	@Override
+	public void cook() {
+		System.out.println("일식을 조리한다.");
+	}
+}

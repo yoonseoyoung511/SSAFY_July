@@ -1,0 +1,18 @@
+package abstract_class02_inheritance;
+
+public class Chef {
+	String name;
+	int age;
+	
+	
+	public void eat() {
+		System.out.println("음식을 먹는다.");
+	}
+	
+	//사용되지 않을 것 같다! -> 슬픈일 -> 지우자
+	public void cook() {
+		System.out.println("음식을 조리한다.");
+	}
+	
+	
+}

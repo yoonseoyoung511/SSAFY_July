@@ -1,0 +1,48 @@
+package generic05_와일드카드;
+
+import java.util.List;
+
+//타입을 결정한 박스.
+class Box<T> {
+	private T obj;
+	
+	public T getObj() {
+		return obj;
+	}
+	
+	public void setObj(T obj) {
+		this.obj = obj;
+	}
+	
+	//파라미터로도 와일드카드 쓸 수 있다
+	public void getList(List<? extends Number> list) {
+		System.out.println(list);
+	}
+	
+	
+}
+
+class Parent {
+	
+}
+
+class Person extends Parent {
+	
+}
+
+class Student extends Person {
+	
+}
+//이 클래스들로 와일드카드 상속 확인해봐도 좋음
+
+public class BoxTest {
+	public static void main(String[] args) {
+		Box<?> box1 = new Box<Integer>(); //와일드카드 했어도 제한 걸고 싶으면 오른쪽에 해도 상관없음
+		//Integer를 포함한 상속받고 있는 클래스들만 사용 가능
+		Box<? extends Integer> box2 = new Box<>();
+		
+		//Double을 포함한 상위 클래스들만 가능
+		Box<? super Double> box3 = new Box<>();
+	}
+}
+ 

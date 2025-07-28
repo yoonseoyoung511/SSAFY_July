@@ -1,0 +1,17 @@
+package interface02_다중구현;
+
+public class Duck implements Swimmable, Flyable {
+
+	@Override
+	public void swim() {
+		System.out.println("수영");
+	}
+	
+	@Override
+	public void fly() {
+		
+	}
+	
+	
+
+}

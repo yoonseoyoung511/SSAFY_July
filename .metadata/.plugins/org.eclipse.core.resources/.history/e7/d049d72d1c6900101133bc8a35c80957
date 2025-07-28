@@ -1,0 +1,53 @@
+package polymorphism01;
+
+class Parent {
+	String x = "parent";
+	
+	public String method() {
+		return "parent method";
+	}
+
+	@Override
+	public String toString() {
+		return "투스트링";
+	}
+	
+	public static String method2() {
+		return "static parent method";
+	}
+	
+	
+}
+
+class Child extends Parent {
+	String x = "child";
+	
+	@Override
+	public String method() {
+		return "child method";
+	}
+	
+	public static String method2() {
+		return "static Child method";
+	}
+}
+
+public class BindingTest {
+	public static void main(String[] args) {
+		Parent p = new Child();
+		Child c = new Child();
+		
+//		System.out.println(p.x);
+//		System.out.println(c.x);
+		
+//		시야제한을 걸어놨는데 둘다 child method로 감.
+//		가장 최근에 만들어놓은 메소드로 감 !
+//		= 동적 바인딩
+		System.out.println(p.method());
+		System.out.println(c.method());
+		
+		System.out.println(p.method2());
+		System.out.println(c.method2());
+	}
+
+}

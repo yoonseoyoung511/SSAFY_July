@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Solution_BJ_2738_행렬덧셈_B3 {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	
+	for (int i = 0; i < args.length; i++) {
+		String string = args[i];
+		
+	}
+}
+}

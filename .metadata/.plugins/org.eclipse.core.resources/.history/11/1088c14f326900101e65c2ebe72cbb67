@@ -1,0 +1,16 @@
+package Java_06_상속과다형성_2011_Lv3;
+
+public class Magazine extends Book {
+	private int year;
+	private int month;
+	public Magazine() {
+		
+	}
+	public Magazine(int year, int month) {
+		super();
+		this.year = year;
+		this.month = month;
+	}
+	
+	
+}

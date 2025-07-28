@@ -1,0 +1,19 @@
+package abstract_class03;
+
+public class Test {
+	public static void main(String[] args) {
+//	Chef들 관리하고 싶음
+		Chef[] chefs = new Chef[2];
+
+//	배열 이용해서 한식, 일식 요리사 담아둠
+		chefs[0] = new KFoodChef();
+		chefs[1] = new JFoodChef();
+
+//	요리시키기
+		for (Chef chef : chefs) {
+			chef.eat();
+			chef.cook(); // 한식조리, 일식조리 -> 동적바인딩!
+		}
+
+	}
+}

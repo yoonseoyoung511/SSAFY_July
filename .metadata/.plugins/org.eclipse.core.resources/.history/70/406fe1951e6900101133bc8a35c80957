@@ -1,0 +1,12 @@
+package abstract_class02_inheritance;
+
+public class KFoodChef {
+	String speciality; //내 주전공
+	
+	public void eat() {
+		System.out.println("한식을 먹는다.");
+	}
+	public void cook() {
+		System.out.println("한식을 조리한다.");
+	}
+}

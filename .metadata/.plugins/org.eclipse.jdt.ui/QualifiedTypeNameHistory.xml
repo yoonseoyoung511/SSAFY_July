@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="pkg1.pkg2.Pack"/>
+    <fullyQualifiedTypeName name="modifire03_default.Person"/>
+    <fullyQualifiedTypeName name="modifire04_protected.Person"/>
+    <fullyQualifiedTypeName name="modifire05_public.Person"/>
+    <fullyQualifiedTypeName name="modifire07_object_array.PersonManager"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.ssafy.pjt.PersonManager"/>
+    <fullyQualifiedTypeName name="com.ssafy.pjt.Person"/>
+    <fullyQualifiedTypeName name="Product"/>
+    <fullyQualifiedTypeName name="inheritance01_no.Student"/>
+    <fullyQualifiedTypeName name="inheritance03_super.Child"/>
+    <fullyQualifiedTypeName name="abstract_class01_no.KFoodChef"/>
+    <fullyQualifiedTypeName name="abstract_class02_inheritance.Chef"/>
+    <fullyQualifiedTypeName name="abstract_class02_inheritance.KFoodChef"/>
+    <fullyQualifiedTypeName name="abstract_class02_inheritance.JFoodChef"/>
+    <fullyQualifiedTypeName name="abstract_class04_anonymous_class.Chef"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="Java_06_상속과다형성_2011_Lv3.BookManager"/>
+    <fullyQualifiedTypeName name="Java_06_상속과다형성_2011_Lv3.Book"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="interface02_다중.Swimmable"/>
+    <fullyQualifiedTypeName name="interface02_다중.Flyable"/>
+    <fullyQualifiedTypeName name="interface03_method.MyInterface1"/>
+    <fullyQualifiedTypeName name="interface03_method.MyInterface2"/>
+    <fullyQualifiedTypeName name="interface03_method.MyClass3"/>
+    <fullyQualifiedTypeName name="interface04_다형성.KFoodChef"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Package"/>
+</qualifiedTypeNameHistroy>

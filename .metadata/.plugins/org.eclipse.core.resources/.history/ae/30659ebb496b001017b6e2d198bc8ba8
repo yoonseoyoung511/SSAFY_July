@@ -1,0 +1,11 @@
+package interface02_다중구현;
+
+public class Duck implements Swimmable {
+
+	@Override
+	public void swim() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

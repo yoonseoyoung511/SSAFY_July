@@ -1,0 +1,19 @@
+package inheritance02_ok;
+//Person 상속받기 위해 extends 키워드 사용하겠다.
+public class Student extends Person {
+//	Person이랑 겹침. / 있어도 문제 생기진 않음. 그래도 굳이 쓸 이유 없음
+//	String name;
+//	int age;
+	String major;
+	
+//	Person이랑 겹침.
+//	public void eat() {
+//		System.out.println("음식을 먹는다.");
+//	}
+	public void study() {
+		System.out.println("공부한다.");
+	}
+	
+	
+
+}

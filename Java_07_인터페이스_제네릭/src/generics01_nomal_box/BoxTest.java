@@ -1,0 +1,31 @@
+package generics01_nomal_box;
+
+class Box {
+	private Object obj;
+	
+	public Object getObj() {
+		return obj;
+	}
+	
+	public void setObj(Object obj) {
+		this.obj = obj;
+	}
+}
+
+public class BoxTest {
+	public static void main(String[] args) {
+		Box box = new Box(); //아무거나 넣을 수 있음!
+		box.setObj("문자열");
+		System.out.println(box.getObj()); //얘는 Object. 동적바인딩에 의해 동작함.
+		
+		box.setObj(1000);
+		System.out.println(box.getObj());
+		
+		//넣을 땐 좋은데 꺼내기가 너무 불편해 !
+		if (box.getObj() instanceof String st) {
+			System.out.println(st);
+		} else if(box.getObj() instanceof Double d) {
+			System.out.println(d);
+		}
+	}
+}

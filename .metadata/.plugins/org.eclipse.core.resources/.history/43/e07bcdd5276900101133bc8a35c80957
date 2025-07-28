@@ -1,0 +1,43 @@
+package abstract_class02_inheritance;
+
+public class Test {
+public static void main(String[] args) {
+//	Chef들 관리하고 싶음
+	Chef[] chefs = new Chef[2];
+	
+//	배열 이용해서 한식, 일식 요리사 담아둠
+	chefs[0] = new KFoodChef();
+	chefs[1] = new JFoodChef();
+	
+//	요리시키기
+//	for(Chef chef : chefs) {
+//		chef.eat();
+////		chef.cook(); //한식조리, 일식조리 -> 동적바인딩!
+//		//오류 뜸) k,j에서 만든거지 우리가 바라보는 chef에서는 없음. 메모리 영역엔 있는데 우리 관점에서 없음 -> 접근 x
+//	}
+	
+//	아까랑 결과 똑같지만 훨씬 복잡해짐.
+	for(Chef chef : chefs) {
+		chef.eat();
+		if(chef instanceof KFoodChef) {
+//			KFoodChef k = (KFoodChef)chef;
+//			k.cook();
+			((KFoodChef) chef).cook(); //형변환 먼저 하고 cook 돌려야 함
+
+		} else if(chef instanceof JFoodChef) {
+			((JFoodChef) chef).cook(); //형변환 먼저 하고 cook 돌려야 함
+		}
+	}
+//	아까랑 결과 똑같지만 훨씬 복잡해짐 -> 최신 문법 적용 ver
+//	for(Chef chef : chefs) {
+//		chef.eat();
+//		if(chef instanceof KFoodChef k) {
+//			k.cook();
+//		} else if(chef instanceof JFoodChef) {
+//			((JFoodChef) chef).cook(); //형변환 먼저 하고 cook 돌려야 함
+//		}
+	}
+	
+//	그냥 Chef는 없고! 무조건 전공이 있는 쉐프가 만들어진다 (제한)
+	
+}
