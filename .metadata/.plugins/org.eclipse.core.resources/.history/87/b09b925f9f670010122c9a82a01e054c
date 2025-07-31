@@ -1,9 +1,0 @@
-package Java_04_클래스와객체_2009_Lv3;
-
-public class Book {
-	String isbn;
-	String title;
-	String author;
-	String publisher;
-	
-}

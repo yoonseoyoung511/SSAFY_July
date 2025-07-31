@@ -1,9 +1,0 @@
-import java.util.Scanner;
-
-public class Java_BJ_2525_오븐시계_B3 {
-public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	
-	
-}
-}
